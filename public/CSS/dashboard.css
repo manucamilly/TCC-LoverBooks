@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;/*Estilo d.fonte*/
+    background-color: #FFEC88;/*Cor-Plano d.fundo*/
+}
+
+header {
+    border-bottom: 4px solid #FAFAFA;
+    background-color: #F9A4D3;
+}
+
+/*Título-Cabeçalho*/
+header h1 {
+    color: #F4369D;
+    margin: 0;/*Margem*/
+    padding: 7px;/*Espaçamento interno entre elementos*/
+    text-align: center;
+    font-family: Jacques Francois Shadow;
+}
+
+header p {
+    inset: 13px 0 0 1216px;
+    margin: 0;
+    position: absolute;
+    font-size: 22px;
+    font-family: Alice;
+}
+
+button#Lupa {
+    top: 7.7px;
+    left: 9.7px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Lupa.svg);
+}
+
+button#Menu {
+    top: 12.8px;
+    right: 9.7px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Menu.svg);
+}
+
+.Livros {
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+#Livro1 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro1.svg);
+}
+
+#Livro2 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro2.svg);
+}
+
+#Livro3 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro3.svg);
+}
+
+#Livro4 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro4.svg);
+}
+
+#Livro5 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro5.svg);
+}
+
+#Livro6 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro6.svg);
+}
+
+#Livro7 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro7.svg);
+}
+
+#Livro8 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro8.svg);
+}
+
+#Livro9 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro9.svg);
+}
+
+#Livro10 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro10.svg);
+}
+
+#Livro11 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro11.svg);
+}
+
+#Livro12 {
+    width: 190px;
+    height: 279.5px;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Livro12.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .Livros {
+        padding: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #Livro1, #Livro2, #Livro3, #Livro4, #Livro5, #Livro6, #Livro7, #Livro8, #Livro9, #Livro10, #Livro11, #Livro12 {
+        width: 175px;
+        height: 257.5px;
+        cursor: pointer;
+        border: 0;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-color: #FFF0;
+        background-image: url(../img/Livro1.svg);
+    }
+
+    #Livro2 {
+        background-image: url(../img/Livro2.svg);
+    }
+
+    #Livro3 {
+        background-image: url(../img/Livro3.svg);
+    }
+
+    #Livro4 {
+        background-image: url(../img/Livro4.svg);
+    }
+
+    #Livro5 {
+        background-image: url(../img/Livro5.svg);
+    }
+
+    #Livro6 {
+        background-image: url(../img/Livro6.svg);
+    }
+
+    #Livro7 {
+        background-image: url(../img/Livro7.svg);
+    }
+
+    #Livro8 {
+        background-image: url(../img/Livro8.svg);
+    }
+
+    #Livro9 {
+        background-image: url(../img/Livro9.svg);
+    }
+
+    #Livro10 {
+        background-image: url(../img/Livro10.svg);
+    }
+
+    #Livro11 {
+        background-image: url(../img/Livro11.svg);
+    }
+
+    #Livro12 {
+        background-image: url(../img/Livro12.svg);
+    }
+}
