@@ -9,6 +9,18 @@ class Usuario{
     public function __construct($db){
         $this->conn = $db;
     }
+    public function getUserInfo($username) {
+        $sql = "SELECT * FROM usuarios WHERE username = :username";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindValue(':username', $username);
+        $stmt->execute();
+
+        if($stmt->rowCount() == 1) {
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+        } else {
+            return null;
+        }
+    }
 
     public function cadastrar($fullname, $username, $email, $password){
             $usernameExistente = $this->verificarUsernameExistente($username);
@@ -27,7 +39,7 @@ class Usuario{
 
             $senhacriptografada = password_hash($password, PASSWORD_DEFAULT);
 
-            $sql = "INSERT INTO cadastro_login (fullname, username, email, password) VALUES (?, ?, ?, ?)";
+            $sql = "INSERT INTO usuarios (fullname, username, email, password) VALUES (?, ?, ?, ?)";
 
             $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(1,$fullname);
@@ -40,7 +52,7 @@ class Usuario{
         }
 
         private function verificarUsernameExistente($username){
-            $sql = "SELECT COUNT(*) FROM cadastro_login WHERE username = ?";
+            $sql = "SELECT COUNT(*) FROM usuarios WHERE username = ?";
             $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(1,$username);
             $stmt->execute();
@@ -49,7 +61,7 @@ class Usuario{
         }
 
         private function verificarEmailExistente($email){
-            $sql = "SELECT COUNT(*) FROM cadastro_login WHERE email = ?";
+            $sql = "SELECT COUNT(*) FROM usuarios WHERE email = ?";
             $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(1,$email);
             $stmt->execute();
@@ -58,7 +70,7 @@ class Usuario{
         }
 
         public function login($username, $password){
-            $sql =  "SELECT * FROM cadastro_login WHERE username = :username";
+            $sql =  "SELECT * FROM usuarios WHERE username = :username";
             $stmt = $this->conn->prepare($sql);
             $stmt->bindValue(':username',$username);
             $stmt->execute();

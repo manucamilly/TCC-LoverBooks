@@ -14,15 +14,14 @@ $username = $_SESSION['username'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow|Alice"> <!--Importando fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow|Alice">
     <link rel="stylesheet" href="../public/CSS/dashboard.css">
     <title>LoverBooks</title>
 </head>
 
 <body>
-    <!--Cabeçalho-->
     <header>
-        <h1>LoverBooks</h1> <!--Título-Cabeçalho-->
+        <h1>LoverBooks</h1>
     </header>
 
     <button id=Lupa></button>
@@ -42,6 +41,5 @@ $username = $_SESSION['username'];
         <a id=Livro11 href="livro.php"></a>
         <a id=Livro12 href="livro.php"></a>
     </div>
-
 </body>
 </html>

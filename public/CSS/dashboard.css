@@ -1,19 +1,25 @@
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;/*Estilo d.fonte*/
-    background-color: #FFEC88;/*Cor-Plano d.fundo*/
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFEC88;
 }
 
 header {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
     border-bottom: 4px solid #FAFAFA;
     background-color: #F9A4D3;
 }
 
-/*Título-Cabeçalho*/
+
 header h1 {
     color: #F4369D;
-    margin: 0;/*Margem*/
-    padding: 7px;/*Espaçamento interno entre elementos*/
+    margin: 0;
+    padding: 7px;
     text-align: center;
     font-family: Jacques Francois Shadow;
 }
@@ -26,27 +32,37 @@ header p {
     font-family: Alice;
 }
 
-button#Lupa {
+button#Inicio {
+    z-index: 2;
     top: 7.7px;
     left: 9.7px;
     width: 35px;
     height: 35px;
     cursor: pointer;
     border: 0;
-    position: absolute;
+    position: fixed;
     background-size: cover;
     background-color: #FFF0;
-    background-image: url(../img/Lupa.svg);
+    background-image: url(../img/Inicio.png);
+}
+
+a {
+    inset: 0px;
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
 }
 
 button#Menu {
+    z-index: 2;
     top: 12.8px;
     right: 9.7px;
     width: 30px;
     height: 25px;
     cursor: pointer;
     border: 0;
-    position: absolute;
+    position: fixed;
     background-size: cover;
     background-color: #FFF0;
     background-image: url(../img/Menu.svg);

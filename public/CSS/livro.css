@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFEC88;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: #F9A4D3;
+    border-bottom: 4px solid #FAFAFA;
+}
+
+/*Título-Cabeçalho*/
+header h1 {
+    color: #F4369D;
+    margin: 0;/*Margem*/
+    padding: 7px;/*Espaçamento interno entre elementos*/
+    text-align: center;
+    font-family: Jacques Francois Shadow;
+}
+
+header p {
+    inset: 13px 0 0 1216px;
+    margin: 0;
+    position: absolute;
+    font-size: 22px;
+    font-family: Alice;
+}
+
+.Conteudo {
+    flex: 1;
+    margin-bottom: 80px; /* ou ajuste conforme necessário para evitar sobreposição com o footer */
+}
+
+button#Inicio {
+    z-index: 1;
+    top: 7.7px;
+    left: 9.7px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: 0;
+    position: fixed;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Inicio.png);
+}
+
+a {
+    inset: 0px;
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+button#Menu {
+    z-index: 1;
+    top: 12.8px;
+    right: 9.7px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    border: 0;
+    position: fixed;
+    background-size: cover;
+    background-color: #FFF0;
+    background-image: url(../img/Menu.svg);
+}
+
+main {
+    height: 150vh;
+    display: flex;
+}
+
+img {
+    margin: 82px 0 0 107px;
+}
+
+.Ficha {
+    position: absolute;
+    inset: 462px 0 0 132px;
+}
+
+span {
+    font-weight: bold;
+    color: #f4369d;
+}
+
+.Resenha {
+    inset: 50px 0 0 478px;
+    position: absolute;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1#Titulo {
+    color: #f4369d;
+    font-family: jason;
+}
+
+p#Resenha {
+    text-align: justify;
+    margin: 0;
+}
+
+div#Container {
+    display: flex;
+    position: absolute;
+    inset: 766px 0 0 0;
+    justify-content: center;
+}
+
+textarea#comentario {
+    width: 90%;
+    height: 170px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #F9A4D3;
+    border-top: 4px solid #FAFAFA;
+}
+
+p#Copyright {
+    text-align: center;
+    color: #F4369D;
+
+}

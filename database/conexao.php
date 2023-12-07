@@ -4,7 +4,7 @@ class Conexao{
     private $host = "localhost";
     private $usuario = "root";
     private $senha = "";
-    private $banco = "usuarios"; 
+    private $banco = "loverbooks"; 
     public $conn;
 
     public function getConnection(){
